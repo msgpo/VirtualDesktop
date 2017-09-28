@@ -1,0 +1,647 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/15/trunk/jni/android-spice-src
+END
+channel-inputs.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-inputs.h
+END
+spice-pulse.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-pulse.h
+END
+channel-display-priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-display-priv.h
+END
+channel-playback.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-playback.h
+END
+lz_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz_common.h
+END
+draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/draw.h
+END
+android-spice-priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/jni/android-spice-src/android-spice-priv.h
+END
+spice-channel.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/14/trunk/jni/android-spice-src/spice-channel.c
+END
+snappy.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/jni/android-spice-src/snappy.c
+END
+spice-cmdline.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-cmdline.c
+END
+spice-channel.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-channel.h
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3/trunk/jni/android-spice-src/test.c
+END
+lz_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz_config.h
+END
+spice-cmdline.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-cmdline.h
+END
+android-spice.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/14/trunk/jni/android-spice-src/android-spice.c
+END
+decode-zlib.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/decode-zlib.c
+END
+channel-cursor.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-cursor.c
+END
+jpeg_encoder.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/14/trunk/jni/android-spice-src/jpeg_encoder.c
+END
+spice-client.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-client.h
+END
+generated_demarshallers1.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/2/trunk/jni/android-spice-src/generated_demarshallers1.c
+END
+android-spice.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/android-spice.h
+END
+spicy.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/14/trunk/jni/android-spice-src/spicy.c
+END
+channel-cursor.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-cursor.h
+END
+jpeg_encoder.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/14/trunk/jni/android-spice-src/jpeg_encoder.h
+END
+channel-main.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-main.c
+END
+marshaller.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/marshaller.c
+END
+canvas_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/canvas_utils.c
+END
+channel-main.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-main.h
+END
+marshaller.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/marshaller.h
+END
+canvas_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/canvas_utils.h
+END
+quic.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/15/trunk/jni/android-spice-src/quic.c
+END
+spice-channel-enums.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-channel-enums.h
+END
+ring.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/ring.h
+END
+canvas_base.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/14/trunk/jni/android-spice-src/canvas_base.c
+END
+quic.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/quic.h
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/jni/android-spice-src/config.h
+END
+lines.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lines.c
+END
+canvas_base.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/canvas_base.h
+END
+coroutine.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/coroutine.h
+END
+lines.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lines.h
+END
+channel-base.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-base.c
+END
+rop3.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/rop3.c
+END
+quic_rgb_tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/quic_rgb_tmpl.c
+END
+androidkeymap.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/androidkeymap.c
+END
+decode.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/jni/android-spice-src/decode.h
+END
+rop3.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/rop3.h
+END
+generated_marshallers.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/jni/android-spice-src/generated_marshallers.c
+END
+lz_compress_tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz_compress_tmpl.c
+END
+spice-common.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-common.h
+END
+rect.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/rect.h
+END
+spice-glib-enums.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-glib-enums.c
+END
+Android.mk
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/14/trunk/jni/android-spice-src/Android.mk
+END
+decode-jpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/decode-jpeg.c
+END
+spice-session-priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-session-priv.h
+END
+mutex.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/2/trunk/jni/android-spice-src/mutex.h
+END
+spice-glib-enums.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-glib-enums.h
+END
+spice-types.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-types.h
+END
+spice-grabsequence.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-grabsequence.h
+END
+channel-display.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-display.c
+END
+channel-display-mjpeg.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-display-mjpeg.c
+END
+generated_marshallers1.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/2/trunk/jni/android-spice-src/generated_marshallers1.c
+END
+messages.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/2/trunk/jni/android-spice-src/messages.h
+END
+pixman_utils.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/pixman_utils.c
+END
+decode-glz.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/decode-glz.c
+END
+spice-util.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/10/trunk/jni/android-spice-src/spice-util.c
+END
+snappy_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/snappy_main.c
+END
+channel-display.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-display.h
+END
+pixman_utils.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/pixman_utils.h
+END
+marshallers.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/marshallers.h
+END
+spice-util.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-util.h
+END
+gio-coroutine.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/gio-coroutine.c
+END
+channel-record.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-record.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/2/trunk/jni/android-spice-src/main.c
+END
+ssl_verify.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/ssl_verify.c
+END
+lz.c
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz.c
+END
+android-worker.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/14/trunk/jni/android-spice-src/android-worker.c
+END
+decode-glz-tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/2/trunk/jni/android-spice-src/decode-glz-tmpl.c
+END
+spice-marshal.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-marshal.c
+END
+gio-coroutine.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/gio-coroutine.h
+END
+channel-record.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-record.h
+END
+spice-widget.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-widget.h
+END
+ssl_verify.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/ssl_verify.h
+END
+lz.h
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz.h
+END
+quic_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/quic_config.h
+END
+quic_tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/quic_tmpl.c
+END
+spice-marshal.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-marshal.h
+END
+quic_family_tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/quic_family_tmpl.c
+END
+spice-audio.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-audio.c
+END
+generated_demarshallers.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/2/trunk/jni/android-spice-src/generated_demarshallers.c
+END
+lz_decompress_tmpl.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/jni/android-spice-src/lz_decompress_tmpl.c
+END
+coroutine_gthread.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/14/trunk/jni/android-spice-src/coroutine_gthread.c
+END
+spice-audio.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-audio.h
+END
+mem.c
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/jni/android-spice-src/mem.c
+END
+spice-channel-cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-channel-cache.h
+END
+mem.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/2/trunk/jni/android-spice-src/mem.h
+END
+region.c
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/jni/android-spice-src/region.c
+END
+spice-session.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-session.c
+END
+sw_canvas.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/sw_canvas.c
+END
+channel-inputs.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/jni/android-spice-src/channel-inputs.c
+END
+region.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/2/trunk/jni/android-spice-src/region.h
+END
+spice-pulse.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-pulse.c
+END
+sw_canvas.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/2/trunk/jni/android-spice-src/sw_canvas.h
+END
+spice-session.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-session.h
+END
+spicy_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spicy_main.c
+END
+demarshallers.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/2/trunk/jni/android-spice-src/demarshallers.h
+END
+channel-playback.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/2/trunk/jni/android-spice-src/channel-playback.c
+END
+spice-channel-priv.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/2/trunk/jni/android-spice-src/spice-channel-priv.h
+END
