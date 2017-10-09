@@ -11,6 +11,7 @@
     tools:context="com.firework.virtualdesktop.MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Spice Client" />
@@ -19,13 +20,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textLongMessage|textPostalAddress"
-        android:text="Server IP Address"
+        android:hint="Server IP Address"
         android:ems="10"
-        android:layout_below="@+id/textView"
+        android:layout_below="@id/textView"
         android:layout_marginTop="33dp"
         android:id="@+id/ipText"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        />
 
     <Button
         android:text="Connect"
@@ -51,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:hint="Username"
         android:ems="10"
         android:layout_marginTop="29dp"
         android:id="@+id/UsernameText"
@@ -63,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textVisiblePassword"
-        android:text="Password"
+        android:hint="Password"
         android:ems="10"
         android:id="@+id/passwordText"
         android:selectAllOnFocus="false"
@@ -84,7 +86,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VM Port"
+        android:hint="VM Port"
         android:ems="10"
         android:id="@+id/VMPortText"
         android:inputType="textPersonName"
