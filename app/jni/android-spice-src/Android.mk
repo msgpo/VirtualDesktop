@@ -2,7 +2,8 @@ LOCAL_PATH 	:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-CROSS_DIR 	:=/data/local
+
+CROSS_DIR 	:=/home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr
 
 libspicec_link_objs 	:= $(CROSS_DIR)/lib/libintl.a \
     $(CROSS_DIR)/lib/libgio-2.0.a \
@@ -14,7 +15,7 @@ libspicec_link_objs 	:= $(CROSS_DIR)/lib/libintl.a \
     $(CROSS_DIR)/lib/libjpeg.a   \
     $(CROSS_DIR)/lib/libpixman-1.a \
     $(CROSS_DIR)/lib/libssl.a \
-    $(CROSS_DIR)/lib/libcrypto.a 
+    $(CROSS_DIR)/lib/libcrypto.a
 
 LOCAL_MODULE    := spicec
 

@@ -53,7 +53,7 @@ void getval(void* dest,void* src,int type)
 }
 void error(const char *msg)
 {
-    SPICE_DEBUG(msg);
+    SPICE_DEBUG("msg:%s",msg);
     exit(0);
 }
 void android_send_task(int task)
