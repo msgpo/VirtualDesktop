@@ -43,7 +43,7 @@ public class Connector {
         public void run() {
             long t1 = System.currentTimeMillis();
             rs = AndroidSpicec(cmd);
-            Log.v("lujie", "Connect rs = " + rs + ",cost = " + (System.currentTimeMillis() - t1));
+            Log.v("firework", "Connect rs = " + rs + ",cost = " + (System.currentTimeMillis() - t1));
             //use message to notice the interface
             if (handler != null) {
                 Message message = new Message();
