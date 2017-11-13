@@ -6,13 +6,16 @@ include $(CLEAR_VARS)
 CROSS_DIR 	:=/home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr
 
 libspicec_link_objs 	:= $(CROSS_DIR)/lib/libintl.a \
+	$(CROSS_DIR)/lib/libgettextpo.a \
+	$(CROSS_DIR)/lib/libintl.a \
     $(CROSS_DIR)/lib/libgio-2.0.a \
-    $(CROSS_DIR)/lib/libgobject-2.0.a  \
-    $(CROSS_DIR)/lib/libgthread-2.0.a  \
+    $(CROSS_DIR)/lib/libgobject-2.0.a \
+    $(CROSS_DIR)/lib/libgthread-2.0.a \
     $(CROSS_DIR)/lib/libgmodule-2.0.a \
-    $(CROSS_DIR)/lib/libglib-2.0.a  \
-    $(CROSS_DIR)/lib/libiconv.a  \
-    $(CROSS_DIR)/lib/libjpeg.a   \
+    $(CROSS_DIR)/lib/libglib-2.0.a \
+    $(CROSS_DIR)/lib/libiconv.a \
+    $(CROSS_DIR)/lib/libjpeg.a \
+	$(CROSS_DIR)/lib/libffi.a \
     $(CROSS_DIR)/lib/libpixman-1.a \
     $(CROSS_DIR)/lib/libssl.a \
     $(CROSS_DIR)/lib/libcrypto.a
@@ -23,7 +26,7 @@ LOCAL_SRC_FILES := jpeg_encoder.c spicy.c spice-cmdline.c android-worker.c andro
 
 LOCAL_LDLIBS 	+= $(libspicec_link_objs) \
 		   -L$(CROSS_DIR)/lib \
-		   -llog -ldl -lstdc++ -lz -lc 
+		   -lintl -llog -ldl -lstdc++ -lz -lc
 
 LOCAL_CPPFLAGS 	+= -DG_LOG_DOMAIN=\"GSpice\" \
 		   -DSW_CANVAS_CACHE \
@@ -35,7 +38,8 @@ LOCAL_C_INCLUDES += $(CROSS_DIR)/include/spice-1 \
 		    $(CROSS_DIR)/include/pixman-1 \
 		    $(CROSS_DIR)/include \
 		    $(CROSS_DIR)/include/glib-2.0 \
-		    $(CROSS_DIR)/lib/glib-2.0/include
+		    $(CROSS_DIR)/lib/glib-2.0/include \
+		    $(CROSS_DIR)/include/crypto
 
 LOCAL_CFLAGS 	:= $(LOCAL_CPPFLAGS) \
     -std=gnu99 -Wall -Wno-sign-compare -Wno-deprecated-declarations -Wl,--no-undefined \

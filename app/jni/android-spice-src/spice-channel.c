@@ -24,6 +24,7 @@
 
 #include <openssl/rsa.h>
 #include <openssl/evp.h>
+#include <crypto/evp_int.h>
 #include <openssl/x509.h>
 #include <openssl/ssl.h>
 #include <openssl/err.h>

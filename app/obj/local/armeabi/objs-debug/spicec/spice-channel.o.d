@@ -371,6 +371,7 @@
   /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/openssl/conf.h \
   /home/lujie/AndroidStudioProjects/VirtualDesktop/app/jni/android-spice-src/spice-session-priv.h \
   /home/lujie/AndroidStudioProjects/VirtualDesktop/app/jni/android-spice-src/spice-marshal.h \
+  /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/crypto/evp_int.h \
   /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/sys/socket.h \
   /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/linux/socket.h \
   /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/asm/fcntl.h \
@@ -1136,6 +1137,8 @@
 /home/lujie/AndroidStudioProjects/VirtualDesktop/app/jni/android-spice-src/spice-session-priv.h:
 
 /home/lujie/AndroidStudioProjects/VirtualDesktop/app/jni/android-spice-src/spice-marshal.h:
+
+/home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/crypto/evp_int.h:
 
 /home/lujie/Android/Sdk/ndk-bundle/platforms/android-21/arch-arm/usr/include/sys/socket.h:
 
