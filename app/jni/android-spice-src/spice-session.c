@@ -900,7 +900,10 @@ GSocket* spice_session_channel_open_host(SpiceSession *session, gboolean use_tls
     SPICE_DEBUG("Resolving host %s %d", s->host, port);
 
     addr = g_network_address_new(s->host, port);
-
+    if (addr == NULL)
+    {
+        SPICE_DEBUG("addr is null");
+    }
     enumerator = g_socket_connectable_enumerate (addr);
     g_object_unref (addr);
 
@@ -915,6 +918,8 @@ GSocket* spice_session_channel_open_host(SpiceSession *session, gboolean use_tls
         sock = channel_connect_socket(sockaddr, &conn_error);
         g_object_unref(sockaddr);
     }
+    if ((*sock) == NULL)
+        SPICE_DEBUG("sock is null");
     g_object_unref(enumerator);
     g_clear_error(&conn_error);
     return sock;

@@ -82,7 +82,7 @@ static spice_window *create_spice_window(spice_connection *conn, int id)
 
     win = malloc(sizeof(*win));
     if (NULL == win)
-	return NULL;
+	    return NULL;
     memset(win,0,sizeof(*win));
     win->id = id;
     win->conn = conn;
@@ -129,9 +129,9 @@ static void main_channel_event(SpiceChannel *channel, SpiceChannelEvent event,
 	case SPICE_CHANNEL_ERROR_CONNECT:
 	    g_message("main channel: failed to connect");
 	    if (rc == 0) {
-		connection_connect(conn);
+		    connection_connect(conn);
 	    } else {
-		connection_disconnect(conn);
+		    connection_disconnect(conn);
 	    }
 	    break;
 	case SPICE_CHANNEL_ERROR_AUTH:
@@ -142,10 +142,10 @@ static void main_channel_event(SpiceChannel *channel, SpiceChannelEvent event,
 	    //_("Please enter the spice server password"),
 	    //password, sizeof(password), true);
 	    if (rc == 0) {
-		g_object_set(conn->session, "password", password, NULL);
-		connection_connect(conn);
+		    g_object_set(conn->session, "password", password, NULL);
+		    connection_connect(conn);
 	    } else {
-		connection_disconnect(conn);
+		    connection_disconnect(conn);
 	    }
 	    break;
 	default:
@@ -164,22 +164,22 @@ static void channel_new(SpiceSession *s, SpiceChannel *channel, gpointer data)
     conn->channels++;
 
     if (SPICE_IS_MAIN_CHANNEL(channel)) {
-	SPICE_DEBUG("new main channel");
-	g_signal_connect(channel, "channel-event",
+	    SPICE_DEBUG("new main channel");
+	    g_signal_connect(channel, "channel-event",
 		G_CALLBACK(main_channel_event), conn);
     }
 
     if (SPICE_IS_DISPLAY_CHANNEL(channel)) {
-	if (id >= SPICE_N_ELEMENTS(conn->wins))
-	    return;
-	if (conn->wins[id] != NULL)
-	    return;
-	SPICE_DEBUG("new display channel (#%d)", id);
-	conn->wins[id] = create_spice_window(conn, id);
+	    if (id >= SPICE_N_ELEMENTS(conn->wins))
+	        return;
+	    if (conn->wins[id] != NULL)
+	        return;
+	    SPICE_DEBUG("new display channel (#%d)", id);
+	    conn->wins[id] = create_spice_window(conn, id);
     }
 
     if (SPICE_IS_INPUTS_CHANNEL(channel)) {
-	SPICE_DEBUG("new inputs channel");
+	    SPICE_DEBUG("new inputs channel");
     }
 
     //if (SPICE_IS_PLAYBACK_CHANNEL(channel)) {
@@ -197,17 +197,17 @@ static void channel_destroy(SpiceSession *s, SpiceChannel *channel, gpointer dat
 
     g_object_get(channel, "channel-id", &id, NULL);
     if (SPICE_IS_MAIN_CHANNEL(channel)) {
-	SPICE_DEBUG("zap main channel");
+	    SPICE_DEBUG("zap main channel");
     }
 
     if (SPICE_IS_DISPLAY_CHANNEL(channel)) {
-	if (id >= SPICE_N_ELEMENTS(conn->wins))
-	    return;
-	if (conn->wins[id] == NULL)
-	    return;
-	SPICE_DEBUG("zap display channel (#%d)", id);
-	destroy_spice_window(conn->wins[id]);
-	conn->wins[id] = NULL;
+	    if (id >= SPICE_N_ELEMENTS(conn->wins))
+	        return;
+	    if (conn->wins[id] == NULL)
+	        return;
+	    SPICE_DEBUG("zap display channel (#%d)", id);
+	    destroy_spice_window(conn->wins[id]);
+	    conn->wins[id] = NULL;
     }
 
     //if (SPICE_IS_PLAYBACK_CHANNEL(channel)) {
@@ -220,7 +220,7 @@ static void channel_destroy(SpiceSession *s, SpiceChannel *channel, gpointer dat
 
     conn->channels--;
     if (conn->channels > 0) {
-	return;
+	    return;
     }
 
     connection_destroy(conn);
@@ -233,7 +233,7 @@ static void migration_state(GObject *session,
 
     g_object_get(session, "migration-state", &mig, NULL);
     if (mig == SPICE_SESSION_MIGRATION_SWITCHING)
-	g_message("migrating session");
+	    g_message("migrating session");
 }
 
 static spice_connection *connection_new(void)
@@ -262,7 +262,7 @@ static void connection_connect(spice_connection *conn)
 static void connection_disconnect(spice_connection *conn)
 {
     if (conn->disconnecting)
-	return;
+	    return;
     conn->disconnecting = true;
     spice_session_disconnect(conn->session);
 }
@@ -275,7 +275,7 @@ static void connection_destroy(spice_connection *conn)
     connections--;
     SPICE_DEBUG("%s (%d)", __FUNCTION__, connections);
     if (connections > 0) {
-	return;
+	    return;
     }
 
     g_main_loop_quit(mainloop);
@@ -294,31 +294,37 @@ void cmd_parse(char* cmd,char** argv,int* argc)
     while(*ch!='\0') {
 	if(*ch!=' '&&*ch!='\t') {
 	    if(!need_parse) {
-		need_parse = true;
-		loc = ch;
+		    need_parse = true;
+		    loc = ch;
 	    }
 	    ch++;
 	} else {
 	    if(need_parse) {
-		need_parse = false;
-		len = ch-loc;
-		argv[i] = (char*)malloc(len+1);
-		memcpy(argv[i],loc,len);
-		argv[i][len] = '\0';
-		i++;
+		    need_parse = false;
+		    len = ch-loc;
+		    argv[i] = (char*)malloc(len+1);
+		    memcpy(argv[i],loc,len);
+		    argv[i][len] = '\0';
+		    i++;
 	    }
 	    ch++;
 	}
     }
     if(need_parse) {
-	need_parse = false;
-	len = ch-loc;
-	argv[i] = (char*)malloc(len+1);
-	memcpy(argv[i],loc,len);
-	argv[i][len] = '\0';
-	i++;
+	    need_parse = false;
+	    len = ch-loc;
+	    argv[i] = (char*)malloc(len+1);
+	    memcpy(argv[i],loc,len);
+	    argv[i][len] = '\0';
+	    i++;
     }
     *argc = i;
+}
+
+//test ok
+JNIEXPORT jstring JNICALL Java_com_firework_virtualdesktop_AndroidSpiceActivity_hello(JNIEnv *env, jobject obj)
+{
+    return (*env)->NewStringUTF(env, "Hello World from JNI !");
 }
 
 #undef C_ANDROID
@@ -326,7 +332,7 @@ void cmd_parse(char* cmd,char** argv,int* argc)
 #ifdef C_ANDROID
 int spice_main(char* cmd)
 #else
-jint Java_com_keqisoft_android_spice_socket_Connector_AndroidSpicec(JNIEnv *env, jobject obj,jstring str)
+JNIEXPORT jint JNICALL Java_com_firework_virtualdesktop_socket_Connector_AndroidSpicec(JNIEnv *env, jobject obj,jstring str)
 #endif
 {
     SPICE_DEBUG("libspicec started");
@@ -334,67 +340,87 @@ jint Java_com_keqisoft_android_spice_socket_Connector_AndroidSpicec(JNIEnv *env,
     jboolean  b  = true;
     char cmd[128];
     memset(cmd, 0, sizeof(cmd));
-    strcpy(cmd ,(char*)(*env)->GetStringUTFChars(env,str, &b));
+    if (str != NULL)
+    {
+        strcpy(cmd ,(const char*)(*env)->GetStringUTFChars(env,str, &b));
+    }
 #endif
 
     SPICE_DEBUG("Got cmd:%s",cmd);
     char** argv = (char**)malloc(12*sizeof(char*));
     int argc;
     cmd_parse(cmd,argv,&argc);
+
     int dex;
     for(dex=0;dex<argc;dex++)
-	SPICE_DEBUG("got item:size:%s:%d",argv[dex],strlen(argv[dex]));
+    {
+        SPICE_DEBUG("got item:size:%s:%d", argv[dex], strlen(argv[dex]));
+    }
 
     GError *error = NULL;
     GOptionContext *context;
     spice_connection *conn;
 
+    SPICE_DEBUG("g_thread_init");
     g_thread_init(NULL);
+    SPICE_DEBUG("bindtextdomain");
     bindtextdomain(GETTEXT_PACKAGE, SPICE_GTK_LOCALEDIR);
+    SPICE_DEBUG("bind_textdomain_codeset");
     bind_textdomain_codeset(GETTEXT_PACKAGE, "UTF-8");
+    SPICE_DEBUG("textdomain");
     textdomain(GETTEXT_PACKAGE);
+
     /* parse opts */
+    SPICE_DEBUG("parse started");
     context = g_option_context_new(_("- spice client application"));
     g_option_context_add_group(context, spice_cmdline_get_option_group());
-    if (!g_option_context_parse (context, &argc, &argv, &error)) {
-	g_print (_("option parsing failed: %s\n"), error->message);
-	exit (1);
+    SPICE_DEBUG("here");
+    if (!g_option_context_parse (context, &argc, &argv, &error))
+    {
+	    g_print (_("option parsing failed: %s\n"), error->message);
+	    exit (1);
     }
 
     g_type_init();
     mainloop = g_main_loop_new(NULL, false);
+    SPICE_DEBUG("g_type_init");
 
     conn = connection_new();
+    SPICE_DEBUG("connection_new");
     spice_cmdline_session_setup(conn->session);
+    SPICE_DEBUG("connection_connect");
     connection_connect(conn);
 
+    //run at here
     pthread_t android_input, android_output;  
     int  iret1, iret2;  
     android_mainloop = mainloop;
 
-    if (connections > 0)
-    {
-	SPICE_DEBUG("start I/O threads");
-	//start the android workers threads
-	iret1 = pthread_create( &android_input, NULL, (void*)android_spice_input, NULL);  
-	iret2 = pthread_create( &android_output, NULL, (void*)android_spice_output, NULL);  
-	//create jpeg_encoder for the jpg images to JAVA
-	android_jpeg_encoder = jpeg_encoder_create();
+    if (connections > 0) {
+	    SPICE_DEBUG("start I/O threads");
+	    //start the android workers threads
+	    iret1 = pthread_create( &android_input, NULL, (void*)android_spice_input, NULL);
+	    iret2 = pthread_create( &android_output, NULL, (void*)android_spice_output, NULL);
+	    //create jpeg_encoder for the jpg images to JAVA
+	    android_jpeg_encoder = jpeg_encoder_create();
 
-	g_main_loop_run(mainloop);
+	    g_main_loop_run(mainloop);
 
-	pthread_join(android_input, NULL);  
-	pthread_join(android_output, NULL);   
-	jpeg_encoder_destroy(android_jpeg_encoder);
-	SPICE_DEBUG("stop I/O threads");
+	    pthread_join(android_input, NULL);
+	    pthread_join(android_output, NULL);
+	    jpeg_encoder_destroy(android_jpeg_encoder);
+	    SPICE_DEBUG("stop I/O threads");
     }
 
 
     while(--argc)
-	free(argv[argc]);
+	    free(argv[argc]);
     free(argv);
 #ifndef C_ANDROID
-    (*env)->ReleaseStringUTFChars(env ,str, NULL);
+    if (str != NULL)
+    {
+        (*env)->ReleaseStringUTFChars(env ,str, NULL);
+    }
 #endif
     SPICE_DEBUG("libspicec.so over.");
     return 0;

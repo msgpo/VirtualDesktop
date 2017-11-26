@@ -8,6 +8,7 @@ import android.os.Message;
 import android.provider.Settings;
 import android.util.Log;
 import android.widget.TabHost;
+import android.view.View;
 
 public class Connector {
     //load libspicec.so
@@ -63,7 +64,7 @@ public class Connector {
     public int connect(String ip, String port, String password) {
         StringBuffer buf = new StringBuffer();
 
-        buf.append("spicy -h").append(ip);
+        buf.append("spicy -h ").append(ip);
         buf.append(" -p ").append(port);
         buf.append(" -w ").append(password);
 

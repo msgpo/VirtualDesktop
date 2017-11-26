@@ -69,7 +69,7 @@ int test_input()
     bzero((char *)&serv_addr,sizeof(serv_addr));
     serv_addr.sun_family = AF_UNIX;
     //char* sock = "/data/local/tmp/spice-input.socket";
-    char* sock = "/data/data/com.keqisoft.android.spice/spice-input.socket";
+    char* sock = "/home/lujie/AndroidStudioProjects/VirtualDesktop/socket_data/spice-input.socket";
     strcpy(serv_addr.sun_path, sock);
     servlen = strlen(serv_addr.sun_path) + 
 	sizeof(serv_addr.sun_family);
@@ -110,7 +110,7 @@ int test_output()
     bzero((char *)&serv_addr,sizeof(serv_addr));
     serv_addr.sun_family = AF_UNIX;
     //char* sock = "/data/local/tmp/spice-output.socket";
-    char* sock = "/data/data/com.keqisoft.android.spice/spice-output.socket";
+    char* sock = "/home/lujie/AndroidStudioProjects/VirtualDesktop/socket_data/spice-output.socket";
     strcpy(serv_addr.sun_path, sock);
     servlen = strlen(serv_addr.sun_path) + 
 	sizeof(serv_addr.sun_family);

@@ -244,7 +244,7 @@ int cmd_parse(char* cmd,char** argv,int* argc)
 
 int main()
 {
-    return snappy_main("./snappy -h 192.168.1.16 -p 5900 -w gnoll -o ahoo.ppm");
+    return snappy_main("./snappy -h 127.0.0.1 -p 5900");
 }
 int snappy_main(char* cmd)
 {

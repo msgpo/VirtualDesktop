@@ -1253,6 +1253,7 @@ static gboolean spice_channel_delayed_unref(gpointer data)
     return FALSE;
 }
 
+//here
 /* coroutine context */
 static void *spice_channel_coroutine(void *data)
 {
@@ -1264,6 +1265,7 @@ static void *spice_channel_coroutine(void *data)
     SPICE_DEBUG("Started background coroutine %p", &c->coroutine);
 
     if (spice_session_get_client_provided_socket(c->session)) {
+        SPICE_DEBUG("get_client_provided_socket");
         if (c->fd < 0) {
             g_critical("fd not provided!");
             goto cleanup;
@@ -1280,6 +1282,7 @@ static void *spice_channel_coroutine(void *data)
 
 reconnect:
     c->sock = spice_session_channel_open_host(c->session, c->tls);
+    SPICE_DEBUG("SOCK");
     if (c->sock == NULL) {
         if (!c->tls) {
             SPICE_DEBUG("connection failed, trying with TLS port");

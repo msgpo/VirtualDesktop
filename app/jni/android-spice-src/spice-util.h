@@ -29,7 +29,7 @@ const gchar *spice_util_get_version_string(void);
 
 #define SPICE_DEBUG(fmt, ...)                                   \
     do {                                                        \
-	if (G_UNLIKELY(spice_util_get_debug()))                 \
+	if (1 || G_UNLIKELY(spice_util_get_debug()))                 \
 	__android_log_print(ANDROID_LOG_ERROR,"----spice-android----",fmt, ##__VA_ARGS__);\
     } while (0)
 
